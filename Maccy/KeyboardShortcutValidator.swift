@@ -2,7 +2,7 @@ import AppKit.NSEvent
 import KeyboardShortcuts
 
 struct KeyboardShortcutValidator {
-  /// Shortcuts using only Option (± Shift) as modifiers produce visible characters
+  /// Shortcuts using only Option (with or without Shift) as modifiers produce visible characters
   /// on macOS (e.g., Option+C → "ç") and are blocked by the system in secure
   /// input contexts such as password fields.
   ///
