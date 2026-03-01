@@ -20,3 +20,4 @@
 "Regex" = "Regular expressions";
 "Mixed" = "Mixed";
 "NotificationsAndSounds" = "Notifications and sounds 􀱁";
+"ShortcutBlockedInPasswordFields" = "⚠️ This shortcut will not work in password fields. Consider using a shortcut with ⌘ (e.g., ⇧⌘C).";
