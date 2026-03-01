@@ -7,14 +7,8 @@ import Vision
 @Model
 class HistoryItem {
   static var supportedPins: Set<String> {
-    // "a" reserved for select all
-    // "q" reserved for quit
-    // "v" reserved for paste
-    // "w" reserved for close window
-    // "z" reserved for undo/redo
     var keys = Set([
-      "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
-      "m", "n", "o", "p", "r", "s", "t", "u", "x", "y"
+      "1", "2", "3", "4", "5", "6", "7", "8", "9"
     ])
 
     if let deleteKey = KeyChord.deleteKey,
@@ -45,7 +39,7 @@ class HistoryItem {
   }
 
   @MainActor
-  static var randomAvailablePin: String { availablePins.randomElement() ?? "" }
+  static var nextAvailablePin: String { availablePins.sorted().first ?? "" }
 
   private static let transientTypes: [String] = [
     NSPasteboard.PasteboardType.modified.rawValue,

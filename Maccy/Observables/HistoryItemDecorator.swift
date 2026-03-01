@@ -178,7 +178,7 @@ class HistoryItemDecorator: Identifiable, Hashable, HasVisibility {
     if item.pin != nil {
       item.pin = nil
     } else {
-      let pin = HistoryItem.randomAvailablePin
+      let pin = HistoryItem.nextAvailablePin
       item.pin = pin
     }
   }
